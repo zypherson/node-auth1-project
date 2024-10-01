@@ -25,7 +25,7 @@ const server = express();
 
 
 server.use(session({
-  name:'choc chip',
+  name:'choclatechip',
   secret:'shh',
   saveUninitialized:false,
   resave:false,
@@ -39,7 +39,7 @@ server.use(session({
   cookie: {
     maxAge: 1000 * 60 * 10,
     secure: false,
-    httpOnly:true
+    httpOnly:true,
   }
 
 }))
